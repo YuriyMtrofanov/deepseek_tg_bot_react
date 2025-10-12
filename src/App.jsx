@@ -1,17 +1,18 @@
 import React, { useEffect } from 'react';
 import './App.css'
-const tg = window.Telegram.WebbApp;
+
+const tg = window.Telegram.WebApp;
 
 function App() {
   
   useEffect(() => {
-    // tg.ready();
-    console.log("in progress");
-  }, []);
+    tg.ready();
+    console.log("tg ready", tg.initData);
+  }, [tg]);
 
   const handleClose = () => {
-    // tg.close();
-    console.log("close");
+    tg.close();
+    console.log("close app");
   };
 
   return (
