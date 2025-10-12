@@ -1,20 +1,22 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './App.css'
 const tg = window.Telegram.WebbApp;
 
 function App() {
   
   useEffect(() => {
-    tg.ready();
+    // tg.ready();
+    console.log("in progress");
   }, []);
 
   const handleClose = () => {
-    tg.close();
+    // tg.close();
+    console.log("close");
   };
 
   return (
     <>
-      <div className='App'>
+      <div>
         <button
           className='button'
           onClick = {handleClose}
@@ -26,4 +28,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
