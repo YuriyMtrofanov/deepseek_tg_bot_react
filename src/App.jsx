@@ -24,6 +24,7 @@ function App() {
         >
             Close
         </button>
+        <img src="https://i.pinimg.com/736x/ff/36/14/ff361444a609588b9602c9307b96e621.jpg" alt="" />
       </div>
     </>
   )
